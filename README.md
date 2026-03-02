@@ -1,6 +1,5 @@
 Here is your complete `README.md` file content:
 
-````markdown
 # 📽️ Auto-Subtitle-Generator
 
 A simple Python tool to automatically generate subtitle (`.srt`) files from video files using OpenAI Whisper.
