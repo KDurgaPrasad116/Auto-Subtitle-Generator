@@ -1,4 +1,4 @@
-AI-Powered Auto Subtitle Generator
+📽️AI-Powered Auto Subtitle Generator
 An automated pipeline to generate high-accuracy SubRip (.srt) subtitle files from local videos or YouTube links using OpenAI's Whisper model.
 
 🚀 Overview
