@@ -1,67 +1,174 @@
-📽️AI-Powered Auto Subtitle Generator
-An automated pipeline to generate high-accuracy SubRip (.srt) subtitle files from local videos or YouTube links using OpenAI's Whisper model.
+Here is your complete README.md file content:
 
-🚀 Overview
-This project leverages state-of-the-art Speech-to-Text AI to eliminate the tedious work of manual transcription. By using a Transformer-based sequence-to-sequence model, it accurately identifies speech, handles technical jargon, and generates precise timestamps compatible with all major video players.
+# 📽️ Auto-Subtitle-Generator
 
-✨ Features
-YouTube Integration: Provide a URL, and the script handles audio extraction via yt-dlp, transcription, and cleanup.
+A simple Python tool to automatically generate subtitle (`.srt`) files from video files using OpenAI Whisper.
 
-Local File Support: Process .mp4, .mkv, and other common video formats directly.
+This project transcribes the audio from a video file and converts it into a properly formatted `.srt` subtitle file with timestamps.
 
-Intelligent Transcription: Powered by OpenAI Whisper, supporting multiple model sizes (tiny to large) to balance speed and accuracy.
+---
 
-Standardized Output: Generates industry-standard .srt files ready for use in VLC, YouTube, or Premiere Pro.
+## 📑 Table of Contents
 
-📺 Featured Sample
-This project was tested and optimized using the following content:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Dependencies](#dependencies)
+- [Configuration](#configuration)
+- [Examples](#examples)
+- [Troubleshooting](#troubleshooting)
+- [Contributors](#contributors)
+- [License](#license)
 
-Video: the FUN way to learn programming
+---
 
-Creator: crin
+## 📖 Introduction
 
-Result: Successfully transcribed technical concepts like negative indexing, string formatting, and API integration with high precision.
+Auto-Subtitle-Generator uses OpenAI's Whisper speech recognition model to transcribe video audio into text and automatically generate subtitle files in `.srt` format.
 
-🛠️ Prerequisites
-System Requirements
-Python 3.7+
+It is designed to be simple, lightweight, and easy to use.
 
-FFmpeg: Required for audio processing.
+---
 
-Windows: winget install ffmpeg
+## 🚀 Features
 
-macOS: brew install ffmpeg
+- 🎤 Automatic speech recognition from video files
+- 🕒 Generates accurate timestamped `.srt` subtitles
+- 📦 Supports multiple Whisper model sizes (`tiny`, `base`, `small`, `medium`, `large`)
+- 📝 Easy-to-modify Python script
+- 🎬 Works with most video formats (requires FFmpeg)
 
-Linux: sudo apt install ffmpeg
+---
 
-Python Dependencies
-Bash
+## 🛠️ Installation
 
-pip install openai-whisper yt-dlp
-📂 Project Structure
-main.py: The core application logic.
+### 1️⃣ Clone the Repository
 
-output_subtitles.srt: Sample output generated from the AI model.
+```bash
+git clone https://github.com/KDurgaPrasad116/Auto-Subtitle-Generator.git
+cd Auto-Subtitle-Generator
+2️⃣ Install Dependencies
 
-.gitignore: Configured to exclude heavy temporary audio and environment files.
+Install Whisper directly:
 
-🚀 Usage
-Transcribing a YouTube Video
-Update the yt_link in the script and run:
+pip install git+https://github.com/openai/whisper.git
 
-Python
+Or install using requirements (if available):
 
-yt_link = "https://youtu.be/kNareBFFWtQ?si=uKYdy1pf0Of_joi5"
-generate_srt_from_youtube(yt_link, "output_subtitles.srt")
-Transcribing a Local Video
-Python
+pip install -r requirements.txt
+3️⃣ Install FFmpeg (Recommended)
 
-generate_srt("your_video.mp4", "output_subtitles.srt")
-⚙️ Performance Tiers
-Choose the right model size in whisper.load_model() based on your hardware:
+Whisper requires FFmpeg for audio extraction.
 
-base: Excellent for quick testing and clear audio.
+Windows: Download from https://ffmpeg.org/download.html
 
-small / medium: Recommended for technical tutorials to ensure acronyms and code terms are spelled correctly.
+Mac:
 
-large: Best-in-class accuracy for complex audio (requires more VRAM/RAM).
+brew install ffmpeg
+
+Ubuntu:
+
+sudo apt install ffmpeg
+▶️ Usage
+
+Open the Python script.
+
+Set your video file path:
+
+video_file = "sample_video.mp4"
+subtitle_file = "output_subtitles.srt"
+model_size = "base"
+
+Run the script:
+
+python main.py
+
+The generated subtitles will be saved as:
+
+output_subtitles.srt
+⚙️ Configuration
+
+You can modify:
+
+Variable	Description
+video_file	Path to input video
+subtitle_file	Output subtitle filename
+model_size	Whisper model size
+Available Model Sizes
+
+tiny (Fastest, least accurate)
+
+base
+
+small
+
+medium
+
+large (Most accurate, slower)
+
+📄 Example Output (.srt format)
+1
+00:00:01,200 --> 00:00:03,500
+Hello and welcome.
+
+2
+00:00:04,000 --> 00:00:06,800
+This is an example subtitle.
+🧪 Example Files
+
+sample_video.mp4 – Sample input video
+
+output_subtitles.srt – Generated subtitle file
+
+❗ Troubleshooting
+Whisper not installing?
+
+Upgrade pip first:
+
+pip install --upgrade pip
+FFmpeg not found?
+
+Make sure FFmpeg is installed and added to your system PATH.
+
+CUDA/GPU Issues?
+
+If using GPU acceleration, ensure:
+
+Correct CUDA version installed
+
+Compatible PyTorch version
+
+👥 Contributors
+
+Project Author: KDurgaPrasad116
+
+Contributions are welcome! Feel free to fork and submit pull requests.
+
+📜 License
+
+This project currently does not include a license file.
+
+It is recommended to add an MIT License or another open-source license for clarity.
+
+💡 Future Improvements
+
+Add CLI argument support
+
+Add support for .vtt format
+
+Add batch video processing
+
+Embed subtitles directly into videos
+
+Build a simple GUI interface
+
+⭐ If you found this project useful, consider giving it a star!
+
+
+If you'd like, I can also generate:
+- A **professional GitHub-optimized version**
+- A **CLI-based version README**
+- Or a **more advanced production-ready README**
+
+Just tell me which style you prefer.
