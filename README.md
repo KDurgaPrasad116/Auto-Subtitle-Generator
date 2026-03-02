@@ -184,8 +184,6 @@ Contributions are welcome! Feel free to fork and submit pull requests.
 
 This project currently does not include a license file.
 
-It is recommended to add an MIT License or another open-source license for clarity.
-
 ---
 
 ## 💡 Future Improvements
