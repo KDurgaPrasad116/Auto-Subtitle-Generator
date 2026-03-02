@@ -1,0 +1,756 @@
+1
+00:00:00,000 --> 00:00:10,680
+Hey, we get a point. Programming can be very fun and useful if you do it the right way,
+
+2
+00:00:10,680 --> 00:00:13,360
+but a lot of people end up quitting their leak as they start off like this.
+
+3
+00:00:13,360 --> 00:00:16,360
+Also use a negative index.
+
+4
+00:00:16,360 --> 00:00:22,600
+So let me teach you the fun way to learn programming. I'd say that the best starting point for
+
+5
+00:00:22,600 --> 00:00:25,840
+everybody would be Python and then after that you can specialize on whatever you want.
+
+6
+00:00:25,840 --> 00:00:29,680
+Just look a Python tutorial on YouTube or find a website and pick whichever one is least
+
+7
+00:00:29,680 --> 00:00:32,240
+annoying to you because they all pretty much teach you the same thing. For now I'll
+
+8
+00:00:32,240 --> 00:00:35,640
+learn basic syntax and basic programming. If you want to do it properly, don't just
+
+9
+00:00:35,640 --> 00:00:39,400
+blindly follow whatever they do in the tutorial. You need to do three very important things.
+
+10
+00:00:39,400 --> 00:00:42,360
+Experiment with the code and understand what you're actually writing. Make your own small
+
+11
+00:00:42,360 --> 00:00:45,520
+projects that you actually enjoy working on and make sure that the way you're doing
+
+12
+00:00:45,520 --> 00:00:47,960
+it is the best way to do it before you move forward.
+
+13
+00:00:47,960 --> 00:00:50,760
+First you're going to need something to write your code in. I would recommend VS Code.
+
+14
+00:00:50,760 --> 00:00:53,400
+I'm not going to show you how to set that up because you don't have the attention span
+
+15
+00:00:53,400 --> 00:00:56,600
+and it's easy anyway. And I will show you how to follow the first rule. During this video,
+
+16
+00:00:56,600 --> 00:00:59,840
+I'm focusing on the code itself, just the general methods that I'm explaining. So let's
+
+17
+00:00:59,840 --> 00:01:03,200
+say I'm watching a tutorial and the YouTuber tells me that the function input takes
+
+18
+00:01:03,200 --> 00:01:07,680
+user input and then I can use it however I want. In the example he takes age as an input
+
+19
+00:01:07,680 --> 00:01:11,680
+and then prints out this is your age. Pretty simple, but then the YouTuber moves on.
+
+20
+00:01:11,680 --> 00:01:14,920
+You might not really understand what the function does if you stop there. So you might want
+
+21
+00:01:14,920 --> 00:01:17,960
+to experiment. Here's how you do it. First I take the function and then I try to print
+
+22
+00:01:17,960 --> 00:01:21,400
+it out. I can see that if I press enter and I don't input anything, I don't get any
+
+23
+00:01:21,400 --> 00:01:25,240
+output. But if I type something in, I get that exact same thing printed out. So basically
+
+24
+00:01:25,240 --> 00:01:29,840
+whatever I type goes inside of input. Now this part is starting to make a bit more sense.
+
+25
+00:01:29,840 --> 00:01:34,200
+Whatever I type into input gets put into age and then age gets printed. But then that
+
+26
+00:01:34,200 --> 00:01:38,120
+also tells me that I don't need the age variable. I can just put the input straight inside
+
+27
+00:01:38,120 --> 00:01:42,000
+of the print. Another interesting feature is that it stalls all of my code until I get
+
+28
+00:01:42,000 --> 00:01:46,000
+rid of the input by pressing enter. So basically this code down here will only execute if I
+
+29
+00:01:46,000 --> 00:01:49,480
+press enter. So then we have Larry. He was building his temple, but he couldn't really
+
+30
+00:01:49,480 --> 00:01:52,920
+see very well. So he couldn't put the star on top of the temple. I need to find the
+
+31
+00:01:52,920 --> 00:01:56,680
+exact coordinates to tell him where to put the star or it's just gonna fall off and he's
+
+32
+00:01:56,680 --> 00:02:01,400
+gonna be very sad. I'll use Win32 API to get my cursor position, but if I run it normally
+
+33
+00:02:01,400 --> 00:02:05,480
+it's just gonna tell me where my cursor is when I'm on my VS code. This doesn't help Larry
+
+34
+00:02:05,480 --> 00:02:09,120
+in any way. But then I remember I can just told the code with input. I can move my mouse
+
+35
+00:02:09,120 --> 00:02:12,480
+on top of where he needs to put the star and then I can get him the coordinates by just
+
+36
+00:02:12,480 --> 00:02:16,440
+pressing enter because it makes my code run. Look at how happy Larry is now. Obviously
+
+37
+00:02:16,440 --> 00:02:19,760
+it doesn't the best way to stall code, but I was just showing you how to explore something
+
+38
+00:02:19,760 --> 00:02:21,560
+new. So now that I experimented with the function
+
+39
+00:02:21,560 --> 00:02:25,120
+a bit I understand it better. Now I want to personalize it and make a small project out
+
+40
+00:02:25,120 --> 00:02:28,480
+of it because this one is very basic. I don't feel like making a whole project out of it.
+
+41
+00:02:28,480 --> 00:02:31,920
+So I'm just gonna customize it for now. In my case I'm just gonna use YouTubers instead
+
+42
+00:02:31,920 --> 00:02:35,200
+of age. And now the last step is to make sure that I do it properly. Throughout this video
+
+43
+00:02:35,200 --> 00:02:38,600
+I've been printing out strings wrong because this is usually how beginners learn them by
+
+44
+00:02:38,600 --> 00:02:41,920
+just adding strings together. The way you're actually supposed to do it is by using string
+
+45
+00:02:41,920 --> 00:02:45,440
+formatting and that would look something like this, which leads me to the next point.
+
+46
+00:02:45,440 --> 00:02:49,920
+How do you know how to do it properly? Well honestly just use AI. AI is basically just a
+
+47
+00:02:49,920 --> 00:02:53,400
+personal teacher for you that's there to guide you throughout everything. Anyone that
+
+48
+00:02:53,400 --> 00:02:57,440
+tells you that AI is bad for learning in this context is objectively wrong. Yes it is
+
+49
+00:02:57,440 --> 00:03:01,480
+bad to heavily rely on AI and make it make entire projects for you and not learn anything
+
+50
+00:03:01,480 --> 00:03:05,560
+obviously. But if you're just giving it a few errors, if you're making it explain to
+
+51
+00:03:05,560 --> 00:03:09,560
+you why your code doesn't work or if there's a better way to do it, it's an incredibly
+
+52
+00:03:09,560 --> 00:03:12,720
+valuable tool and I think everyone should be using it. Now let me give you a bit of a
+
+53
+00:03:12,720 --> 00:03:16,440
+better example for the second rule. Let's take an array. An array is just kind of a list
+
+54
+00:03:16,440 --> 00:03:21,200
+of items that all have a certain slot and then you can just find the item by the slot,
+
+55
+00:03:21,200 --> 00:03:24,720
+usually in tutorials to use fruit or names as examples. But let's make this more fun
+
+56
+00:03:24,720 --> 00:03:28,880
+and personal. Let's say I want to play Valorant and I want my script to decide a random
+
+57
+00:03:28,880 --> 00:03:32,640
+character for me to play. Well I can just fill out an array with every character name
+
+58
+00:03:32,640 --> 00:03:36,000
+and instead of doing it manually I can just save some time and tell you a GPT to make
+
+59
+00:03:36,000 --> 00:03:40,400
+me the array. So now if I ask for the agent that index 2 it's gonna look 0, 1, 2 and it
+
+60
+00:03:40,400 --> 00:03:44,080
+should be common. There it is. Now how do I randomize it? Well I need to find some sort
+
+61
+00:03:44,080 --> 00:03:48,040
+of a random number generator so I'm gonna look up how to generate a random number in Python.
+
+62
+00:03:48,040 --> 00:03:51,560
+I found out that I can use the random module. Now I'm gonna make it generate a random
+
+63
+00:03:51,560 --> 00:03:57,040
+number between 1 and 27. In this case between 0 and 26 cause arrays started 0 and then
+
+64
+00:03:57,040 --> 00:04:00,480
+it's just gonna print out the character at that position in the array pretty much picking
+
+65
+00:04:00,480 --> 00:04:04,400
+me a random character. I think that's a pretty cool project and also in the process I learned
+
+66
+00:04:04,400 --> 00:04:07,960
+how arrays work better and I learned how to generate random numbers and throughout time
+
+67
+00:04:07,960 --> 00:04:11,200
+you're gonna learn a lot of different stuff by doing these sorts of small projects and
+
+68
+00:04:11,240 --> 00:04:14,120
+the more complex the project the more you're gonna learn. Learning the basics should only
+
+69
+00:04:14,120 --> 00:04:17,360
+take you a few days to a week so it shouldn't be that bad and then after that you get to
+
+70
+00:04:17,360 --> 00:04:20,520
+start having fun cause you can do whatever project you want. I didn't only tell you
+
+71
+00:04:20,520 --> 00:04:24,400
+to start with Python because it's the easiest to learn but also it's extremely versatile
+
+72
+00:04:24,400 --> 00:04:27,440
+so you can do pretty much anything with it. It's also gonna help you allat in the future
+
+73
+00:04:27,440 --> 00:04:31,040
+whenever you wanna make a custom tool that doesn't exist or you wanna automate some tasks
+
+74
+00:04:31,040 --> 00:04:34,440
+because it's so easy to do with Python. When it comes to languages people worry about
+
+75
+00:04:34,440 --> 00:04:38,000
+this way too much in the beginning it really doesn't matter. The most important thing
+
+76
+00:04:38,000 --> 00:04:41,640
+is that you learn to program properly and then you can hop between languages very easily.
+
+77
+00:04:41,640 --> 00:04:44,720
+Once you learn to program it's easy to learn a new language and it's a lot faster than
+
+78
+00:04:44,720 --> 00:04:48,680
+learning your first language. In fact developers pick up new languages all the time if it's
+
+79
+00:04:48,680 --> 00:04:52,400
+the most suitable for the project that they're working on except me I'm not touching Java
+
+80
+00:04:52,400 --> 00:04:56,440
+and now let's talk about cool projects. Until now we pretty much just dealt with strings
+
+81
+00:04:56,440 --> 00:05:00,600
+and static values in the code we didn't really get external information like we didn't
+
+82
+00:05:00,600 --> 00:05:04,240
+interact with any apps or websites or anything interesting. Now it's time to spice it up
+
+83
+00:05:04,240 --> 00:05:07,400
+and interact with external platforms. There's three main ways to do this.
+
+84
+00:05:08,080 --> 00:05:11,760
+Let's see you're playing an online multiplayer game and you have matches with other players.
+
+85
+00:05:11,760 --> 00:05:15,320
+The game provider tracks those games and keeps them stored on a database. The company's
+
+86
+00:05:15,320 --> 00:05:18,480
+not gonna give you direct access to their database for obvious reasons but they are gonna
+
+87
+00:05:18,480 --> 00:05:22,160
+provide an API that lets you interact with it. This means that you can pull and manipulate
+
+88
+00:05:22,160 --> 00:05:25,720
+whatever relevant information you want in your program. This can be done with many services
+
+89
+00:05:25,720 --> 00:05:28,920
+not just games but I'm gonna use Ligas an example for now. In this case I'm gonna make
+
+90
+00:05:28,920 --> 00:05:32,680
+an account and get an API key that allows me to interact with API. First I'm gonna
+
+91
+00:05:32,680 --> 00:05:37,200
+get the player identifier by giving it the in-game tag. Afterwards I can look for the player's
+
+92
+00:05:37,200 --> 00:05:41,520
+match history data with the PUI data I just got. Then I can get the match data by the
+
+93
+00:05:41,520 --> 00:05:44,960
+match ID that I just pulled from the match history and now I have all of the match data
+
+94
+00:05:44,960 --> 00:05:49,120
+for that game. The API looks something like this but then I can take specific values
+
+95
+00:05:49,120 --> 00:05:52,720
+and modify it with some front end to make it look like this and there's a lot of sites
+
+96
+00:05:52,720 --> 00:05:56,080
+that do this for many different games. Like here we can see the level, the champion, the
+
+97
+00:05:56,080 --> 00:05:59,040
+number of deaths and a bunch of things that don't even show up like how many times they
+
+98
+00:05:59,040 --> 00:06:02,200
+pinged. You can do all of this in Python through request by the way. Now let's do something
+
+99
+00:06:02,200 --> 00:06:05,680
+a bit more entertaining. I'm gonna take a live game and I'm gonna use the game API to
+
+100
+00:06:05,680 --> 00:06:09,680
+get me the in-game data. So this is what the API looks like and it gets me stats like
+
+101
+00:06:09,680 --> 00:06:13,920
+my character stats, for example my attack damage, my HP, my attack speed and other stuff.
+
+102
+00:06:13,920 --> 00:06:17,840
+I can pull all of those stats through their API and manipulate it however I wanted my script.
+
+103
+00:06:17,840 --> 00:06:20,840
+In my case I'm just gonna print it out in the terminal and now we can see that as my
+
+104
+00:06:20,840 --> 00:06:24,760
+attack speed gets higher in game it also updates in the terminal. This means that my script
+
+105
+00:06:24,760 --> 00:06:28,800
+currently has active live game data. With this I could do something like a Discord presence
+
+106
+00:06:28,800 --> 00:06:32,960
+bot which shows my KDA and my farming real time as I'm playing a game so that people on
+
+107
+00:06:32,960 --> 00:06:36,880
+Discord can see that. Or I could go the evil route and just make a kiting script out of
+
+108
+00:06:36,880 --> 00:06:40,480
+it, although I can't really show you that on YouTube. There's APIs for all sorts of platforms,
+
+109
+00:06:40,480 --> 00:06:43,920
+it doesn't have to be league or any game for that matter so if you don't really care about games,
+
+110
+00:06:43,920 --> 00:06:47,360
+you can do it for whatever your interest are. Let's say that you like football, you can just find
+
+111
+00:06:47,360 --> 00:06:52,480
+an API that gets you player data or match data and then make an app that displays it or indexes it.
+
+112
+00:06:53,040 --> 00:06:56,720
+You can also do it externally by scanning the screen or having preset positions and then
+
+113
+00:06:56,720 --> 00:07:01,360
+simulating user input like your mouse and keyboard actions. This is harder to detect by antichutes and
+
+114
+00:07:01,360 --> 00:07:04,720
+it's also useful for quick automation. Here you have to wait for it to turn green and then
+
+115
+00:07:04,720 --> 00:07:08,880
+click it and check your reaction time. First I'm gonna make it check a pixel from somewhere around here.
+
+116
+00:07:08,880 --> 00:07:12,880
+If it turns green it's gonna have this RGB value so I can just put it in a loop and constantly
+
+117
+00:07:12,880 --> 00:07:17,280
+scan that pixel to see if it reaches that value. If it does I just make it click by simulating my mouse
+
+118
+00:07:17,280 --> 00:07:22,320
+input. This way I only use screen detection and keyboard and mouse manipulation so I don't actually
+
+119
+00:07:22,320 --> 00:07:26,560
+inject into the browser or do any sorts of site requests. It's called a pixel scanner and I do it
+
+120
+00:07:26,560 --> 00:07:30,480
+externally. This was a simple example but there's much more interesting examples like this one where
+
+121
+00:07:30,480 --> 00:07:35,120
+I just automate an entire game by using the same technique. Pretty much everything that's actively
+
+122
+00:07:35,120 --> 00:07:38,960
+running in a program is stored in memory. This means that if I were to find the memory address
+
+123
+00:07:38,960 --> 00:07:43,120
+from a hb I could change that however I want. This has limitations because of antichutes and other
+
+124
+00:07:43,120 --> 00:07:47,680
+stuff but that's the general concept of internals. Basically if you're injecting into a process and
+
+125
+00:07:47,680 --> 00:07:52,240
+you're editing or reading its memory directly you're doing internals. These are general used for
+
+126
+00:07:52,240 --> 00:07:55,760
+game cheats. If you're interested in that I'm gonna have a kernel level antichute documentary
+
+127
+00:07:55,760 --> 00:07:59,840
+coming up next month. I also documented some of my Python projects. Earlier I told you to use
+
+128
+00:07:59,840 --> 00:08:03,360
+chatchipity for help but now the projects are getting far too advanced where it to be able to
+
+129
+00:08:03,360 --> 00:08:07,280
+properly help you. Trying to do this through an lm chat just simply doesn't work at this scale.
+
+130
+00:08:07,280 --> 00:08:11,120
+It wasn't built for that. Luckily today's sponsor came in clutch. MeetWarp2.0 an
+
+131
+00:08:11,120 --> 00:08:15,440
+agentic development environment where agents actually do the heavy lifting across the entire
+
+132
+00:08:15,440 --> 00:08:20,400
+development lifecycle. It's a top performer on terminal bench above cloud code and Gemini CLI
+
+133
+00:08:20,400 --> 00:08:25,840
+and scored 71% on SWE bench verified making it one of the highest performing coding agents out
+
+134
+00:08:26,000 --> 00:08:29,920
+there. Warp isn't just another chat window or autocomplete toy. It's built at the right level in the
+
+135
+00:08:29,920 --> 00:08:34,400
+stack. It picks the best model for the job or less you choose the best model. Gathers context
+
+136
+00:08:34,400 --> 00:08:39,440
+across repos, plans, summarizes and then applies fixes directly to files. You can run multiple
+
+137
+00:08:39,440 --> 00:08:44,320
+agents in parallel, manage their autonomy from a clear UI, edit the diffs in app and then commit
+
+138
+00:08:44,320 --> 00:08:49,040
+and push without using 20 different apps and a lm chat interfaces. The whole workflow is literally
+
+139
+00:08:49,040 --> 00:08:53,920
+what Warp2.0 is made for. There's a reason why over 600,000 engineers use Warp. The best part is
+
+140
+00:08:53,920 --> 00:08:57,680
+that they have a free plan and you can easily try it yourself without having to buy anything.
+
+141
+00:08:57,680 --> 00:09:01,680
+If you enjoy it, you can go pro for $15 a month and you can use the code CRIN to get your first
+
+142
+00:09:01,680 --> 00:09:06,720
+month of pro for only $3. If this sounds good, head over to go.warp.dev slash CRIN and check it
+
+143
+00:09:06,720 --> 00:09:10,560
+out for yourself. The link is also at the top of the description in the pinned comment. That's
+
+144
+00:09:10,560 --> 00:09:13,840
+pretty much it for people that want to get into programming but don't really care about jobs.
+
+145
+00:09:13,840 --> 00:09:16,800
+Now when it comes to getting a job in programming, here's what you need to do. First of all,
+
+146
+00:09:16,800 --> 00:09:20,960
+get a university degree because it's very useful and the competition will only get higher over time
+
+147
+00:09:20,960 --> 00:09:24,240
+and you're gonna need it. On top of everything that I'm about to say, obviously. If you're
+
+148
+00:09:24,240 --> 00:09:27,760
+more info on that, I also made a whole video on it. Okay, so another thing to finish the basics
+
+149
+00:09:27,760 --> 00:09:31,520
+is time to pick a field to specialize in and start working on more advanced projects. The reason
+
+150
+00:09:31,520 --> 00:09:35,520
+why I want to specialize on a specific field is because they vary quite a lot in the technologies
+
+151
+00:09:35,520 --> 00:09:39,120
+that they use and the skills that you need. So low level engineering is probably gonna need to know
+
+152
+00:09:39,120 --> 00:09:44,000
+sea, memory management, work closely with hardware, understand low level performance, optimization,
+
+153
+00:09:44,000 --> 00:09:48,160
+concurrency, be really good at operating systems and many other things of that sort. Meanwhile,
+
+154
+00:09:48,160 --> 00:09:51,600
+a web developer does the exact opposite and is gonna work with a high level language,
+
+155
+00:09:51,600 --> 00:09:55,520
+probably using Python and JavaScript and they don't really care about hardware or memory and they
+
+156
+00:09:55,520 --> 00:09:59,600
+don't have to optimize it in that way. Instead, they're gonna care more about APIs, web protocols,
+
+157
+00:09:59,600 --> 00:10:03,840
+data modeling, optimizations for servers and scaling, networking, device compatibility and
+
+158
+00:10:03,840 --> 00:10:07,120
+those sorts of things. That's pretty much it for the generic guide and you're not supposed to
+
+159
+00:10:07,120 --> 00:10:10,720
+get too much guidance because you're supposed to find your own path and think for yourself rather
+
+160
+00:10:10,720 --> 00:10:14,800
+than find a roadmap that's gonna work for everybody because it's probably not gonna work for everybody.
+
+161
+00:10:14,800 --> 00:10:18,160
+One more tip though is that if you wanna start with low level you need to understand data
+
+162
+00:10:18,160 --> 00:10:22,160
+structures and CS and low level concepts very well before you start working with that language
+
+163
+00:10:22,160 --> 00:10:26,080
+because otherwise there's no reason to use it and in general a developer needs to be very good at
+
+164
+00:10:26,080 --> 00:10:30,240
+CS principles and making stuff properly and well optimized. Other than that you just continue with
+
+165
+00:10:30,240 --> 00:10:33,840
+the project learning method and you find something that you find interesting and you wanna work on
+
+166
+00:10:33,840 --> 00:10:37,520
+and then you learn along the way even if it's very complicated and you don't know where to start.
+
+167
+00:10:37,520 --> 00:10:41,680
+For things that are kind of subfields on their own like AI for example you can just take courses
+
+168
+00:10:41,680 --> 00:10:45,440
+on it and then continue rather than just starting from scratch. Now I'm just going for some guidelines
+
+169
+00:10:45,440 --> 00:10:49,360
+that you need to follow as a programmer. Regardless of how complex the project is you should still
+
+170
+00:10:49,360 --> 00:10:52,720
+attempt it if it's a project that you wanna do and you'll just learn along the way. You shouldn't
+
+171
+00:10:52,720 --> 00:10:56,400
+be scared by the complexity. Don't just use the technology because you're comfortable with it when
+
+172
+00:10:56,400 --> 00:11:01,200
+there's much better alternatives. Like it's a very bad idea to parse a JSON by using strings and
+
+173
+00:11:01,200 --> 00:11:05,760
+then splitting the string instead of just using JSON parsing and when it comes to AI once you're
+
+174
+00:11:05,760 --> 00:11:09,760
+already learned basic syntax don't overuse it too much for problem solving or you're gonna become
+
+175
+00:11:09,920 --> 00:11:14,400
+a useless programmer. Also tutorial hell isn't a real thing you can just alternate between projects
+
+176
+00:11:14,400 --> 00:11:19,040
+and tutorials and find whichever balance you like. I personally watched about half an hour of tutorials
+
+177
+00:11:19,040 --> 00:11:22,640
+when I got started and then I got bored and I started doing projects. When it comes to projects
+
+178
+00:11:22,640 --> 00:11:26,560
+get creative and do stuff for the things that you actually use or enjoy. Yeah you could make macros
+
+179
+00:11:26,560 --> 00:11:31,680
+automation cheats or plugins or mods for the games or apps that you enjoy or you can even do
+
+180
+00:11:31,680 --> 00:11:35,360
+something a lot more abstract like an encryption app for discord. You'd have a password that would
+
+181
+00:11:35,360 --> 00:11:38,560
+generate an encryption key. You would share the password with your friend and then you would both
+
+182
+00:11:38,720 --> 00:11:41,840
+have the same encryption and the encryption key and from that you can just type in an encrypted
+
+183
+00:11:41,840 --> 00:11:45,680
+way through any communication app. All you really have to do is just get creative and do stuff for
+
+184
+00:11:45,680 --> 00:11:49,520
+the things you like. What I'm trying to tell you is you have so many options when you're looking at
+
+185
+00:11:49,520 --> 00:11:53,600
+projects that you can make and all you have to do is get creative and not be scared to just hop in
+
+186
+00:11:53,600 --> 00:11:57,920
+and try to do it. From now on it just comes down to you putting in the work and try to have fun.
+
+187
+00:11:57,920 --> 00:12:01,120
+In the beginning it's quite important that you have fun or you're gonna get bored and you're
+
+188
+00:12:01,120 --> 00:12:05,600
+gonna drop it very early and there's just no reason to make a fun experience miserable and other
+
+189
+00:12:05,600 --> 00:12:08,640
+than that. See you in the next one.
+
