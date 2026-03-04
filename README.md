@@ -197,11 +197,3 @@ This project currently does not include a license file.
 ⭐ If you found this project useful, consider giving it a star!
 
 ```
-
-If you'd like, I can also generate:
-- A **professional GitHub-optimized version**
-- A **CLI-based version README**
-- Or a **more advanced production-ready README**
-
-Just tell me which style you prefer.
-```
